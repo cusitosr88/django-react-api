@@ -32,6 +32,15 @@
   color: #f3ba00;
 }
 
+.rate-container{
+  border-top: #282c34 solid 2px;
+  margin-top: 20px;
+}
+
+.rate-container .fa-star{
+  font-size: 1.5em;
+  cursor: pointer;
+}
 .no-review {
   color: #555555;
 }

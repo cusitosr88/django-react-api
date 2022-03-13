@@ -23,7 +23,11 @@ function App() {
   }, [])
 
   const movieClicked = movie => {
-    setSelectedMovie(movie)
+    setSelectedMovie(movie);
+  }
+
+  const loadMovie = movie => {
+    setSelectedMovie(movie);
   }
 
   return (
@@ -36,7 +40,7 @@ function App() {
             <MovieList movies={movies} movieClicked={movieClicked}/>
           </div>
           <div>
-            <MovieDetail movie={selectedMovie}/>
+            <MovieDetail movie={selectedMovie} updateMovie={loadMovie}/>
           </div>
         </div>
     </div>
